@@ -180,7 +180,7 @@ header .navbar .menu_2 .menu_item {
 
 header .tesla_title {
   text-align: center;
-  background: url("../img/Tesla logo + car.png") center center/cover no-repeat;
+  background: url("../img/Tesla_logo_car.png") center center/cover no-repeat;
   min-height: 594px;
   margin-bottom: 26px;
 }
@@ -286,4 +286,136 @@ header .go_bottom {
   text-align: center;
 }
 
-.webp header .tesla_title{ background: url("../img/Tesla logo + car.png") center center/cover no-repeat; }
+@media (max-width: 375px) {
+  .header .container {
+    width: 375px;
+  }
+
+  .header .navbar {
+    margin: 5px 21px 43px 2px;
+  }
+
+  .header .navbar .menu_item {
+    display: none;
+  }
+
+  .header .tesla_title {
+    min-height: 240px;
+    background-size: contain !important;
+    margin-bottom: -10px;
+  }
+
+  .header .tesla_title h1 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .header .tesla_title p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .header .tesla_info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .header .tesla_info .info_block {
+    margin-right: 0px;
+    margin-bottom: 43px;
+  }
+
+  .header .tesla_info .info_block:nth-child(2) {
+    margin-left: 20px;
+  }
+
+  .header .tesla_info .info_block .info_block_text1 {
+    font-size: 27px;
+    line-height: 27px;
+    margin-bottom: 2px;
+  }
+
+  .header .tesla_info .info_block .info_block_text2 {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .header .test_drive {
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+  .header .container {
+    width: 768px;
+  }
+
+  .header .navbar {
+    margin: 24px 33px 94px 15px;
+  }
+
+  .header .navbar .menu_item {
+    display: none;
+  }
+
+  .header .tesla_title {
+    min-height: 520px;
+    background-size: contain !important;
+    margin-bottom: -50px;
+  }
+
+  .header .tesla_title h1 {
+    font-size: 90px;
+    line-height: 110px;
+  }
+
+  .header .tesla_title p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .header .tesla_info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 63px;
+  }
+
+  .header .tesla_info .info_block {
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-bottom: 56px;
+  }
+
+  .header .tesla_info .info_block .info_block_img {
+    width: 65px;
+  }
+
+  .header .tesla_info .info_block .info_block_text1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 2px;
+  }
+
+  .header .tesla_info .info_block .info_block_text2 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .header .test_drive {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 0;
+  }
+
+  .header .order {
+    width: 220px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 30px;
+    background: #e51937;
+    color: #fff;
+  }
+}
+
+.webp header .tesla_title{ background: url(../img/Tesla_logo_car.webp) center center/cover no-repeat; }
