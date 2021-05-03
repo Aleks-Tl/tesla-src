@@ -60,6 +60,62 @@
             color: #fff;
         }
     }
+    .main {
+        .container {
+            width: 768px;
+        }
+        &__wrap {
+            position: static;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .left-main {
+            width: 100%;
+            h2 {
+                margin-right: 58px;
+                text-align: right;
+            
+            }
+        }
+        .right-main {
+            width: 100%;
+            position: static;
+            &__flexwrap {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+            &__flex {
+                &:first-child {
+                    width: 316px;
+                }
+                &:nth-child(2) {
+                    width: 350px;
+                }
+            }
+            &__list {
+                margin-top: 10px;
+                margin-left: 70px;
+            }
+            &__wrapper {
+                margin-bottom: 40px;
+            }
+            &__order {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 75px;
+            }
+            &__knowmore, &__btn {
+                display: block;
+                margin: 0 18px;
+            }
+        }
+        
+    }
+    
 }
 
 @media (max-width: 375px) {
@@ -109,6 +165,45 @@
         .test_drive {
             margin-bottom: 25px;
             margin-left: 10px;
+        }
+    }
+    .main {
+        .container {
+            width: 375px;
+        }
+        &__wrap {
+            position: static;
+            max-width: 768px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .left-main {
+            h2 {
+                display: none;
+            }
+        }
+        .right-main {
+            width: 100%;
+            position: static;
+            padding: 25px;
+            &__flexwrap {
+                display: block;
+            }
+            &__flex {
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+           
+            &__order {
+                display: none;
+            }
+            
         }
     }
 }

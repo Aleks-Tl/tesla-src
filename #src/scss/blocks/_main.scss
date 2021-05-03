@@ -1,0 +1,105 @@
+.main {
+    &__wrap {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    } 
+    .right-main {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }  
+    .left-main {
+        h2 {
+            margin-top: 70px;
+            margin-left: 80px;
+            font-weight: 600;
+            font-size: 70px;
+            line-height: 85px;
+            color: #E51937;
+        }
+    }
+    .right-main {
+        width: 440px;
+        height: 100%;
+        background: #E51937;
+        padding: 51px;
+        color: #ffffff;
+        &__title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;            
+        }
+        &__text {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            margin-top: 11px;
+        }
+        &__wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 55px;
+            margin-bottom: 55px;
+        }
+        &__img {
+            margin-right: 20px;
+        }
+        &__item {
+            padding-top: 5px;
+        }
+        &__list {
+            margin-top: 70px;
+            list-style-type: none;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 15px;
+            span {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 20px;
+            }
+            span.litle_fz {
+                font-size: 12px;
+                line-height: 12px;
+                font-weight: 300;
+            }
+        }
+        &__order {
+            margin-top: 240px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a {
+                color: #fff;
+            }
+            
+        }
+        &__knowmore {
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            text-transform: uppercase;
+            background: url('../../img/Group2.png') left center/contain no-repeat;
+            padding-left: 23px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &__btn {
+            width: 160px;
+            height: 40px;
+            border: 2px solid #FFFFFF;
+            background: transparent;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.footer {
+    &__wrap {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    } 
+    .right-footer {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }  
+    .left-footer {
+        width: 440px;
+        height: 900px;
+        background: #E51937;
+        padding: 51px;
+        color: #ffffff;
+        z-index: 50;
+        &__title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;            
+        }
+        &__text {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            margin-top: 11px;
+        }
+        &__order {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a {
+                color: #fff;
+            }
+            
+        }
+        &__knowmore {
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            text-transform: uppercase;
+            background: url('../../img/Group2.png') left center/contain no-repeat;
+            padding-left: 23px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &__btn {
+            width: 160px;
+            height: 40px;
+            border: 2px solid #FFFFFF;
+            background: transparent;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        &__flex {
+            .raiting-footer {
+                margin-top: 49px;
+                &__title {
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 37px;
+                }
+                &__stars {
+                    margin-top: 29px;
+                }
+                &__star {
+                    font-weight: bold;
+                    font-size: 17px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                    span {
+                        display: inline-block;
+                        width: 170px;
+                    }
+                    div {
+                        display: inline-block;
+                        width: 126px;
+                        height: 23px;
+                        background: url('../../img/Star.png');
+                    }
+                    
+                    span.dung {
+                        display: inline-block;
+                        width: 50px;
+                        font-size: 10px;
+                        line-height: 12px;
+                        opacity: 0.7;
+                    }
+                }
+            }
+            
+        } 
+        &__fivestar {
+            margin-top: 90px;
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 30px;
+            background: url('../../img/Group_1.png') left center/contain no-repeat;
+            padding-left: 60px;
+            span {
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 1px;
+            }
+        }
+    }
+}
